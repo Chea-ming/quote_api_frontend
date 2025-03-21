@@ -1,3 +1,4 @@
+---
 
 ```markdown
 # Quote Management (Frontend)
@@ -26,4 +27,3 @@ This is the frontend for the Quote Management application, built with React. It 
 ## Testing the Application
 Open http://localhost:3000 in the browser.
 
-   
