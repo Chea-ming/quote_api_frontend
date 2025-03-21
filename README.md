@@ -1,6 +1,3 @@
----
-
-```markdown
 # Quote Management (Frontend)
 
 This is the frontend for the Quote Management application, built with React. It interacts with the Laravel backend API to allow users to register, log in, fetch random quotes, save favorites, and manage them.
