@@ -1,38 +1,163 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.app {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+h1 {
   text-align: center;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 2.5em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.logout-btn {
+  background-color: #e74c3c;
   color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.logout-btn:hover {
+  background-color: #c0392b;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  color: #34495e;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s;
+  margin-bottom: 15px;
+}
+
+input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.quote-display {
+  font-style: italic;
+  color: #7f8c8d;
+  margin: 15px 0;
+}
+
+.quote-list {
+  list-style: none;
+}
+
+.quote-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.quote-item:last-child {
+  border-bottom: none;
+}
+
+.quote-item button {
+  background-color: #e74c3c;
+  padding: 5px 10px;
+  font-size: 0.9em;
+}
+
+.quote-item button:hover {
+  background-color: #c0392b;
+}
+
+.message {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.success {
+  color: #27ae60;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-size: 2em;
   }
+
+  .quote-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .quote-item button {
+    margin-top: 10px;
+  }
+}
+
+h3 {
+  margin-bottom: 10px;
+
 }
